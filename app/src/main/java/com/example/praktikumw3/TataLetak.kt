@@ -1,5 +1,6 @@
 package com.example.praktikumw3
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -15,6 +16,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 
 @Composable
@@ -111,6 +114,7 @@ fun TataletakRowColumn(modifier: Modifier) {
 
 @Composable
 fun TataletakBoxColumnRow(modifier: Modifier) {
+    val gambar = painterResource(id = R.drawable.notasibalok)
     Column {
         Box(
             modifier = modifier
@@ -128,7 +132,6 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                     Text(text = "Col1_Row1_Komponen2")
                     Text(text = "Col1_Row1_Komponen3")
                 }
-
                 Row(
                     modifier = modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
@@ -140,7 +143,6 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
             }
         }
         Spacer(modifier = Modifier.height(height = 10.dp))
-
         Box(
             modifier = modifier
                 .fillMaxWidth()
@@ -148,7 +150,10 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                 .background(color = Color.Cyan),
             contentAlignment = Alignment.Center
         ) {
-
+        Image( painter = gambar,
+            contentDescription = null,
+            contentScale = ContentScale.Fit
+        )
         }
     }
 }
