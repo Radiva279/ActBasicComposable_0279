@@ -22,6 +22,7 @@ import androidx.compose.ui.unit.sp
 fun TugasLogin(){
     val background = painterResource(id = R.drawable.background)
     val gambarStart = painterResource(id = R.drawable.start)
+    val gambarOrang = painterResource(id = R.drawable.prabowogibran)
     Box(
         modifier = Modifier.fillMaxSize()
     ) {
@@ -74,6 +75,14 @@ fun TugasLogin(){
                 fontSize = 25.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Black
+            )
+            Image(
+                painter = gambarOrang,
+                contentDescription = "Foto",
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(230.dp),
+                contentScale = ContentScale.Crop
             )
         }
     }
