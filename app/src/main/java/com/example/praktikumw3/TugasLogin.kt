@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -20,6 +21,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun TugasLogin(){
     val background = painterResource(id = R.drawable.background)
+    val gambarStart = painterResource(id = R.drawable.start)
     Box(
         modifier = Modifier.fillMaxSize()
     ) {
@@ -47,6 +49,15 @@ fun TugasLogin(){
             )
             Spacer(
                 modifier = Modifier.height(15.dp)
+            )
+
+            Image(
+                painter = gambarStart,
+                contentDescription = "Start",
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(80.dp),
+                contentScale = ContentScale.Fit
             )
         }
     }
