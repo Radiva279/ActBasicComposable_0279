@@ -36,6 +36,12 @@ fun TugasLogin(){
                 fontWeight = FontWeight.Bold,
                 color = Color.Blue
             )
+
+            Text(
+                text = "Silahkan klik Start untuk Login",
+                fontSize = 16.sp,
+                color = Color.White
+            )
         }
     }
 }
