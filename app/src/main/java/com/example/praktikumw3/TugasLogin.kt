@@ -22,7 +22,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun TugasLogin(){
+fun TugasLogin(modifier: Modifier = Modifier){
     val background = painterResource(id = R.drawable.background)
     val gambarStart = painterResource(id = R.drawable.start)
     val gambarOrang = painterResource(id = R.drawable.prabowogibran)

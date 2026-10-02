@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize()
                 ) { innerPadding ->
 
-                    TataletakBoxColumnRow(
+                    TugasLogin(
                         modifier = Modifier.padding(
                             paddingValues = innerPadding
                         )
