@@ -64,10 +64,10 @@ fun TugasLogin(){
             )
 
             Text(
-                text = "Nama",
+                    text = "Radiva Galih Nofriyanto",
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.Red
+                color = Color.Blue
             )
         }
     }
