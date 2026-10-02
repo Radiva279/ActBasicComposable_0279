@@ -105,7 +105,7 @@ fun TugasLogin(modifier: Modifier = Modifier){
                 contentDescription = "Foto",
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(250.dp)
+                    .height(300.dp)
                     .clip(
                         RoundedCornerShape(40.dp)
                     ),
