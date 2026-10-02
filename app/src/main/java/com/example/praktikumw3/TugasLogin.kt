@@ -59,6 +59,10 @@ fun TugasLogin(){
                     .height(80.dp),
                 contentScale = ContentScale.Fit
             )
+            Spacer(
+                modifier = Modifier.height(15.dp)
+            )
+
         }
     }
 }
