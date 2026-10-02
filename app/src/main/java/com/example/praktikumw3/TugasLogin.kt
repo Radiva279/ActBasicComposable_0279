@@ -27,7 +27,7 @@ fun TugasLogin(modifier: Modifier = Modifier){
     val gambarStart = painterResource(id = R.drawable.start)
     val gambarOrang = painterResource(id = R.drawable.prabowogibran)
     Box(
-        modifier = Modifier.fillMaxSize()
+        modifier = modifier.fillMaxSize()
     ) {
         Image(
             painter = background,
@@ -40,10 +40,10 @@ fun TugasLogin(modifier: Modifier = Modifier){
             modifier = Modifier
                 .fillMaxSize()
                 .padding(
-                    top = 25.dp,
-                    start = 20.dp,
-                    end = 20.dp,
-                    bottom = 20.dp
+                    top = 65.dp,
+                    start = 15.dp,
+                    end = 15.dp,
+                    bottom = 15.dp
                 ),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
@@ -53,14 +53,17 @@ fun TugasLogin(modifier: Modifier = Modifier){
                 fontWeight = FontWeight.Bold,
                 color = Color.Blue
             )
+            Spacer(
+                modifier = Modifier.height(3.dp)
+            )
 
             Text(
                 text = "Silahkan klik Start untuk Login",
-                fontSize = 16.sp,
+                fontSize = 18.sp,
                 color = Color.White
             )
             Spacer(
-                modifier = Modifier.height(15.dp)
+                modifier = Modifier.height(10.dp)
             )
 
             Image(
@@ -68,33 +71,37 @@ fun TugasLogin(modifier: Modifier = Modifier){
                 contentDescription = "Start",
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(80.dp),
+                    .height(50.dp),
                 contentScale = ContentScale.Fit
             )
             Spacer(
-                modifier = Modifier.height(15.dp)
+                modifier = Modifier.height(35.dp)
             )
 
             Text(
                     text = "Radiva Galih Nofriyanto",
-                fontSize = 20.sp,
+                fontSize = 18.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Blue
             )
             Text(
                 text = "20240140279",
-                fontSize = 25.sp,
+                fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Black
             )
+            Spacer(
+                modifier = Modifier.height(50.dp)
+            )
+
             Image(
                 painter = gambarOrang,
                 contentDescription = "Foto",
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(230.dp)
+                    .height(175.dp)
                     .clip(
-                        RoundedCornerShape(20.dp)
+                        RoundedCornerShape(15.dp)
                     ),
                 contentScale = ContentScale.Crop
             )
