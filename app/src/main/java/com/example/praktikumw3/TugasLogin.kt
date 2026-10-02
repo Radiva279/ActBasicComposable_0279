@@ -97,7 +97,7 @@ fun TugasLogin(modifier: Modifier = Modifier){
                 color = Color.Black
             )
             Spacer(
-                modifier = Modifier.height(50.dp)
+                modifier = Modifier.height(80.dp)
             )
 
             Image(
@@ -105,9 +105,9 @@ fun TugasLogin(modifier: Modifier = Modifier){
                 contentDescription = "Foto",
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(175.dp)
+                    .height(250.dp)
                     .clip(
-                        RoundedCornerShape(15.dp)
+                        RoundedCornerShape(40.dp)
                     ),
                 contentScale = ContentScale.Crop
             )
