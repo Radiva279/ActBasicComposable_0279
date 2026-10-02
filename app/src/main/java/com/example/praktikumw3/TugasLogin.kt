@@ -79,7 +79,13 @@ fun TugasLogin(modifier: Modifier = Modifier){
             )
 
             Text(
-                    text = "Radiva Galih Nofriyanto",
+                text = "Nama",
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Yellow
+            )
+            Text(
+                text = "Radiva Galih Nofriyanto",
                 fontSize = 18.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Blue
